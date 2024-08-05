@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_2.1_FightGame_Diego</title>
+    <link href="CSS_Game_Diego.css" rel = "stylesheet" type = "text/css"/>
+
+</head>
+<body>
+    <h3>
+        Rules:
+    <br>
+    Attack the enemy <br> And <br> Block incoming attacks when timer runs out!
+    <br>
+    </h3>
+    <br>
+    <center>
+        <h4>
+            FIGHT OF CENTUARY!
+        </h4>
+    <button onclick="startMatch()">Start Match</button>
+    <br><br>
+    <img src = "Fighter2.webp"/>
+    <section>
+        <div class="container">
+            <h1>00:00</h1>
+        </div>
+    </section>
+    <progress value="100" max="100" id="playerHealth"></progress>
+    <progress value="100" max="100" id="health"></progress>
+    <br><br>
+    <button onclick="attackEnemy()">Attack</button>
+    <button onclick="blockEnemy()">Block</button>
+    <br>
+    <button onclick="restartMatch()">Restart Match</button>
+
+
+    <p>
+        SCORE
+    </p>
+
+    <h2 id="cash"></h2>
+    <img src = "FightBack.jpg"/>
+    </center>
+    <script src="JavaScript_FightGame1_Diego.js"></script>
+</body>
+</html>
